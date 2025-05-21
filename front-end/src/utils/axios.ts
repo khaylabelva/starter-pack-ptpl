@@ -39,6 +39,7 @@ export const endpoints = {
   auth: {
     me: '/api/auth/me',
     signIn: '/api/auth/sign-in',
+    signIn: 'http://localhost:3000/login',
     signUp: '/api/auth/sign-up',
   },
   mail: {
@@ -52,9 +53,10 @@ export const endpoints = {
     latest: '/api/post/latest',
     search: '/api/post/search',
   },
-  product: {
-    list: '/api/product/list',
-    details: '/api/product/details',
-    search: '/api/product/search',
+  products: {
+    list: 'http://localhost:3000/products',
+    create: 'http://localhost:3000/products',
+    update: (id: string | number) => `http://localhost:3000/products/${id}`,
+    delete: (id: string | number) => `http://localhost:3000/products/${id}`,
   },
 };

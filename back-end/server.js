@@ -7,7 +7,7 @@ const authRoutes = require('./routes/auth');
 const productRoutes = require('./routes/products');
 
 const app = express();
-app.use(cors());
+app.use(cors({ origin: 'http://localhost:8081' }));
 app.use(express.json());
 
 app.use('/login', authRoutes);
