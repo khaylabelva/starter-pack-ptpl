@@ -58,4 +58,10 @@ export const endpoints = {
     update: (id: string | number) => `http://localhost:3000/products/${id}`,
     delete: (id: string | number) => `http://localhost:3000/products/${id}`,
   },
+  tasks: {
+    list: 'http://localhost:3000/tasks',
+    create: 'http://localhost:3000/tasks',
+    update: (id: string | number) => `http://localhost:3000/tasks/${id}`,
+    delete: (id: string | number) => `http://localhost:3000/tasks/${id}`,
+  },
 };
