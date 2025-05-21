@@ -136,7 +136,7 @@ export default function ProductPage() {
                   <TableCell>{p.name}</TableCell>
                   <TableCell>{p.description}</TableCell>
                   <TableCell>{p.quantity}</TableCell>
-                  <TableCell>Rp{p.price.toFixed(2)}</TableCell>
+                  <TableCell>Rp{p.price.toLocaleString('id-ID')}</TableCell>
                   <TableCell>
                     <Button size="small" onClick={() => onEdit(p)}>
                       Edit
