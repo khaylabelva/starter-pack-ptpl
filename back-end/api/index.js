@@ -18,4 +18,4 @@ app.use('/login', authRoutes);
 app.use('/products', productRoutes);
 app.use('/tasks', taskRoutes);
 
-module.exports = serverless(app);
+module.exports.handler = serverless(app);
