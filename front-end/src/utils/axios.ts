@@ -38,7 +38,7 @@ export const endpoints = {
   calendar: '/api/calendar',
   auth: {
     me: '/api/auth/me',
-    signIn: 'http://localhost:3000/login',
+    signIn: 'https://starterpackbe.vercel.app/login',
     signUp: '/api/auth/sign-up',
   },
   mail: {
@@ -53,15 +53,15 @@ export const endpoints = {
     search: '/api/post/search',
   },
   products: {
-    list: 'http://localhost:3000/products',
-    create: 'http://localhost:3000/products',
-    update: (id: string | number) => `http://localhost:3000/products/${id}`,
-    delete: (id: string | number) => `http://localhost:3000/products/${id}`,
+    list: 'https://starterpackbe.vercel.app/products',
+    create: 'https://starterpackbe.vercel.app/products',
+    update: (id: string | number) => `https://starterpackbe.vercel.app/products/${id}`,
+    delete: (id: string | number) => `https://starterpackbe.vercel.app/products/${id}`,
   },
   tasks: {
-    list: 'http://localhost:3000/tasks',
-    create: 'http://localhost:3000/tasks',
-    update: (id: string | number) => `http://localhost:3000/tasks/${id}`,
-    delete: (id: string | number) => `http://localhost:3000/tasks/${id}`,
+    list: 'https://starterpackbe.vercel.app/tasks',
+    create: 'https://starterpackbe.vercel.app/tasks',
+    update: (id: string | number) => `https://starterpackbe.vercel.app/products/${id}`,
+    delete: (id: string | number) => `https://starterpackbe.vercel.app/products/${id}`,
   },
 };
