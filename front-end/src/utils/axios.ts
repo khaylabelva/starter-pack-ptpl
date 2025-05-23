@@ -61,7 +61,7 @@ export const endpoints = {
   tasks: {
     list: 'https://starterpackbe.vercel.app/tasks',
     create: 'https://starterpackbe.vercel.app/tasks',
-    update: (id: string | number) => `https://starterpackbe.vercel.app/products/${id}`,
-    delete: (id: string | number) => `https://starterpackbe.vercel.app/products/${id}`,
+    update: (id: string | number) => `https://starterpackbe.vercel.app/tasks/${id}`,
+    delete: (id: string | number) => `https://starterpackbe.vercel.app/tasks/${id}`,
   },
 };
